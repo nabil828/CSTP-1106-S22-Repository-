@@ -11,13 +11,10 @@ z = 2 * y - x / 2 + 50
 // x == 12/2 TRUE
 // y != -5 FALSE
 
-if(y > 0){
-    console.log("it is positive")
-}
+if(y == -5){
+    console.log("1111")
+}    
 else{
-    if(y == 0)
-        console.log("it is zero")
-    else
-        console.log("it is negative")
+    console.log("22222")
 }
-    
+console.log("3333")
