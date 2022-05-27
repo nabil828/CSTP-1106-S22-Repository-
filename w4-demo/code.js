@@ -1,20 +1,27 @@
 
-x = 6;
-y = -5 ;
-z = 2 * y - x / 2 + 50
+grade = 95;
 
-// alert(z)
-// 6 < -8 FALSE
-// 5/2 > 4 TRUE
-// 0 <= 0/2 TRUE
-// 5 >= 4/2 TRUE 
-// x == 12/2 TRUE
-// y != -5 FALSE
+// if the 90 <= grade < 100
+// print A+
 
-if(y == -5){
-    console.log("1111")
+// if the 80 <= grade < 90
+// print B+
+
+// if the 70 <= grade < 80
+// print C+
+
+// if the 60 <= grade < 70
+// print D
+
+// if the 50 <= grade < 60
+// print E
+
+// if the 0 <= grade < 50
+// print F
+if(grade < 100 && grade >=90){
+    console.log("A+")
 }    
 else{
     console.log("22222")
 }
-console.log("3333")
+console.log("Bye!")
