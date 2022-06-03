@@ -34,6 +34,8 @@ solve_qaud(a, b, c)
 // solve_qaud(2, 2, 1)
 
 
+function setup (){
+    console.log("jQuery works!");
+}
 
-
-
+$(document).ready(setup)
