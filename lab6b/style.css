@@ -47,3 +47,10 @@ body {
 * {
     box-sizing: border-box;
 }
+
+
+#footer{
+
+    clear: both;
+    margin-top: 10px;
+}
