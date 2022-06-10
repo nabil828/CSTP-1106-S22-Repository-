@@ -49,8 +49,30 @@ body {
 }
 
 
-#footer{
+#footer {
 
     clear: both;
     margin-top: 10px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    #left_column,
+    #right_column {
+        float: none;
+        width: 100%;
+        padding-left: 0px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 400px) {
+    #nav a {
+        float: none;
+        width: 100%;
+    }
 }
