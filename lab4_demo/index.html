@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+        }
+        body, h1, h2{
+            margin: 0px;
+        }
+        #header, #footer{
+            height: 40px;
+        }
+        
+      
+        #header {
+            background-color: tomato;
+            color: white;
+            text-align: center;
+        }
+
+        #main{
+            height: calc(100% - 80px);
+        }
+        #article {
+            background-color: greenyellow;
+            width: 75%;
+            float: right;
+            height: 100%;
+        }
+        #nav {
+            background-color: blue;
+            color: white;
+            width: 25%;
+            float: left;
+            height: 100%;
+        }
+        a {
+            color: white;
+        }
+
+        #footer {
+            background-color: tomato;
+            color: white;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>
+            Cities
+        </h1>
+    </div>
+
+    <div id="main">
+        <div id="nav">
+            <a href="#">Vancouver</a> <br>
+            <a href="#">London</a><br>
+            <a href="#">Paris</a>
+        </div>
+    
+        <div id="article">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eveniet maxime voluptatem necessitatibus ullam earum labore, alias cumque molestiae dolore eligendi vel aliquam corrupti unde aut! Tempore fugiat debitis minima.
+            </p>
+            <img src="https://www.w3schools.com/cssref/pineapple.jpg" alt="">
+        </div>
+    </div>
+    
+
+    <div id="footer">
+        <h2> Footer </h2>
+    </div>
+</body>
+</html>
