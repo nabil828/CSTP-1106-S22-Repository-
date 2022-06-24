@@ -1,8 +1,12 @@
-function x(a){
-    // alert("Hi!" + a)
+x = 500 // number
 
-    return "Hi!" + a
+
+if (x > 10)
+    console.log("x is more than 10"); // ?
+else {
+    console.log("x is less than or equal 10"); // ?
+    console.log("bye!");
 }
 
-alert(x(" my name C!"));
+
 
