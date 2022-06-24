@@ -1,11 +1,17 @@
 function f1(){
-    tmp = jQuery("#x").val()
-    jQuery("#z").html(tmp)
+    tmp1 = jQuery("#op1").val()
+    tmp2 = jQuery("#op2").val()
+    tmp1 = Number(tmp1)
+    tmp2 = Number(tmp2)
+    jQuery("#result").html(tmp1 + tmp2)
 }
 
 function setup(){
     console.log("setup() got called!");
-    jQuery("#y").click(f1)
+    jQuery("#add").click(f1)
+    jQuery("#sub").click(f2)
+    jQuery("#mul").click(f3)
+    jQuery("#div").click(f4)
 
 }
 
