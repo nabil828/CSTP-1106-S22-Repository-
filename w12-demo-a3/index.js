@@ -7,6 +7,7 @@ function process_response(x) {
     data = x
     page_number = 1
     display()
+    paginate_menu()
 }
 
 function call_ajax() {
@@ -27,6 +28,8 @@ function display_back_drop() {
 }
 
 function display() {
+    $("#results").empty();
+    
     page_size = Number(page_size)
     first_index = page_size * (page_number - 1)
     last_index = page_size * (page_number - 1) + (page_size - 1)
@@ -50,6 +53,12 @@ function chage_page_number() {
     display()
 }
 
+function paginate_menu(){
+    for(i = 1; i <= Math.ceil(data.results.length / page_size); i++){
+        $("#buttons").append(`<button class="display" id="${i}"> ${i}</button>`)
+    }
+}
+
 function setup() {
     $("#find_movie_info").click(call_ajax)
     // $("body").click(()=>{alert()});
@@ -60,7 +69,8 @@ function setup() {
         page_size = $("#page_size option:selected").val();
     })
 
-    $(".display").click(chage_page_number)
+    // $(".display").click(chage_page_number)
+    $("body").on("click",  ".display", chage_page_number)
 
 }
 
