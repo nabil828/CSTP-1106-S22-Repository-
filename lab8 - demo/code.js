@@ -44,6 +44,7 @@ function div_() {
 
 function x_(){
   $(this).parent().hide()
+  
 }
 
 setup = function () {
